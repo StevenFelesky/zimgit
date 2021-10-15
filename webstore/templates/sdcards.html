@@ -1,0 +1,16 @@
+{% extends "basic.html" %}
+
+{% block content %}
+  <h1>SD Cards</h1>
+  {% if sdcards %}
+  <ul>
+    {% for sdcard in sdcards %}
+      <li>
+        <a href="{{ sdcard.get_absolute_url }}">{{ sdcard.name }}</a> ({{sdcard.description}})
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>There are no sdcards available.</p>
+  {% endif %}
+{% endblock %}
