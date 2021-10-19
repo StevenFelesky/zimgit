@@ -1,7 +1,7 @@
 from django.contrib import admin
 
-from .models import Hotspot, SDCard, ZimFile
+from .models import Hotspot, SDCard, Download
 
 admin.site.register(SDCard)
-admin.site.register(ZimFile)
+admin.site.register(Download)
 admin.site.register(Hotspot)
